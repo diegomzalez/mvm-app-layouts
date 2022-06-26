@@ -9,7 +9,7 @@ html {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   min-width: 320px;
   height: 10vh;
   background: #3498DB;
@@ -45,8 +45,9 @@ header nav > div:last-child > button {
   color: white;
 }
 main {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  min-width: 320px;
+  height: 80vh;
   padding: 50px 0;
 }
 main > section:first-child {
@@ -67,14 +68,14 @@ main > section:nth-child(2) {
 main > section:nth-child(2) > form {
   width: 67%;
   max-width: 320px;
-  height: 25vh;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 main > section:nth-child(2) > form > span {
-  font-size: 15px;
+  font-size: 1.5rem;
   align-self: flex-start;
   color: #747E84;
   font-weight: 500;
@@ -95,10 +96,46 @@ main > section:nth-child(2) > form > label > input:focus-visible {
 }
 main > section:nth-child(2) > form > input {
   width: 80%;
-  height: 30px;
+  height: -webkit-fill-available;
   margin: 20px 0 0;
   background: #2E86C1;
   border: none;
   border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
   color: white;
+}
+footer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  background: #2E86C1;
+  color: white;
+  text-align: center;
+}
+footer > section  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer > section:last-child > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  list-style: none;
+}
+footer > section:last-child > ul >  li > a {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+footer > section:last-child > ul >  li > a.facebook {
+  background: url("../assets/facebook.svg") center/cover no-repeat;
+}
+footer > section:last-child > ul >  li > a.instagram {
+  background: url("../assets/instagram.svg") center/cover no-repeat;
+}
+footer > section:last-child > ul >  li > a.twitter {
+  background: url("../assets/twitter.svg") center/cover no-repeat;
 }
