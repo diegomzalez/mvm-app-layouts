@@ -1,0 +1,24 @@
+header nav {
+  justify-content: center;
+}
+header > nav > div > p {
+  font-size: 3rem;
+}
+header .header-button-container {
+  display: none;
+}
+main .main-form {
+  flex-wrap: wrap;
+}
+main form .form-button + a.form-register {
+  display: block;
+  height: 16px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: var(--secondary-blue);
+  align-self: center;
+  font-size: 1.2rem;
+}
+main form .form-button + a.form-register:hover {
+  text-decoration: underline;
+}

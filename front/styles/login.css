@@ -1,8 +1,8 @@
 :root {
-  --primary-blue: #3498DB;
-  --secondary-blue: #2E86C1;
+  --primary-blue: #3498db;
+  --secondary-blue: #2e86c1;
   --font-color-white: white;
-  --font-color-label: #747E84;
+  --font-color-label: #747e84;
   --font-color-input: #686868;
 }
 * {
@@ -12,7 +12,7 @@
 }
 html {
   font-size: 62.5%;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 header {
@@ -21,7 +21,6 @@ header {
   height: 10vh;
   background: var(--primary-blue);
   color: var(--font-color-white);
-
 }
 header nav {
   width: 100%;
@@ -35,11 +34,11 @@ header nav span {
   width: 20px;
   height: 20px;
   display: inline-block;
-/*   background: url("../assets/home-logo.png") center/contain no-repeat; */
+  /*   background: url("../assets/home-logo.png") center/contain no-repeat; */
 }
 header nav > div > p {
   font-size: 1.1rem;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 header nav > div:last-child > button {
   width: 52px;
@@ -66,11 +65,9 @@ main > section.main-image {
   display: none;
 }
 
-
 main > section.main-form {
   height: auto;
   width: 320px;
-  
 }
 main > .main-form > section.main-title {
   width: 222px;
@@ -80,7 +77,7 @@ main > .main-form > section.main-title {
 main > .main-form > section.main-title h1 {
   font-size: 50px;
   font-weight: 700;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: var(--secondary-blue);
 }
 main > section.main-form > form {
@@ -116,7 +113,7 @@ input:focus-visible {
   outline: none;
 }
 
-main > section.main-form > form  > input.button:last-of-type {
+main > section.main-form > form > input.button:last-of-type {
   width: 80%;
   height: 35px;
   margin: 10px 0 0;
@@ -141,7 +138,7 @@ footer {
   color: var(--font-color-white);
   text-align: center;
 }
-footer > section  {
+footer > section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,17 +149,17 @@ footer > section:last-child > ul {
   margin-top: 10px;
   list-style: none;
 }
-footer > section:last-child > ul >  li > a {
+footer > section:last-child > ul > li > a {
   display: inline-block;
   height: 20px;
   width: 20px;
 }
-footer > section:last-child > ul >  li > a.facebook {
+footer > section:last-child > ul > li > a.facebook {
   background: url("../assets/facebook.svg") center/cover no-repeat;
 }
-footer > section:last-child > ul >  li > a.instagram {
+footer > section:last-child > ul > li > a.instagram {
   background: url("../assets/instagram.svg") center/cover no-repeat;
 }
-footer > section:last-child > ul >  li > a.twitter {
+footer > section:last-child > ul > li > a.twitter {
   background: url("../assets/twitter.svg") center/cover no-repeat;
 }
