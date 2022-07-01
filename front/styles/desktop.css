@@ -1,7 +1,32 @@
+header nav {
+    justify-content: center;
+}
+header > nav> div > p {
+    font-size: 3rem;
+}
+header .header-button-container {
+    display: none;
+}
+main {
+    padding: 35px 0;
+}
 main > section.main-image {
     display: block;
 }
 main > section.main-image > figure > img {
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 200px;
+}
+main > section.main-form > form {
+    width: 100%;
+}
+.form-sign-up {
+    display: block;
+    height: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--secondary-blue);
+}
+.form-sign-up:hover {
+    text-decoration: underline;
 }

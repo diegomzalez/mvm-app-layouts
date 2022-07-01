@@ -56,31 +56,37 @@ main {
   width: 100vw;
   min-width: 320px;
   height: 80vh;
-  padding: 50px 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
 }
 main > section.main-image {
   display: none;
 }
-main > section.main-title {
+
+
+main > section.main-form {
+  height: auto;
+  width: 320px;
+  
+}
+main > .main-form > section.main-title {
   width: 222px;
   height: auto;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 35px auto;
 }
-main > section.main-title h1 {
+main > .main-form > section.main-title h1 {
   font-size: 50px;
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
   color: var(--secondary-blue);
 }
-
-main > section.main-form {
-  height: auto;
-  width: auto;
-}
 main > section.main-form > form {
-  width: 67%;
+  width: 70%;
   max-width: 320px;
-  height: 200px;
+  height: 215px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,19 +115,22 @@ main > section.main-form > form > label > input {
 input:focus-visible {
   outline: none;
 }
-.form-button:last-child {
+
+main > section.main-form > form  > input.button:last-of-type {
   width: 80%;
-  height: -webkit-fill-available;
-  margin: 20px 0 0;
+  height: 35px;
+  margin: 10px 0 0;
   background: var(--secondary-blue);
   border: none;
   border-radius: 8px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--font-color-white);
   cursor: pointer;
 }
-
+.form-sign-up {
+  display: none;
+}
 footer {
   width: 100vw;
   height: 10vh;
