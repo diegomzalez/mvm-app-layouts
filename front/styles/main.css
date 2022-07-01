@@ -1,3 +1,10 @@
+:root {
+  --primary-blue: #3498DB;
+  --secondary-blue: #2E86C1;
+  --font-color-white: white;
+  --font-color-label: #747E84;
+  --font-color-input: #686868;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,8 +19,8 @@ header {
   width: 100vw;
   min-width: 320px;
   height: 10vh;
-  background: #3498DB;
-  color: white;
+  background: var(--primary-blue);
+  color: var(--font-color-white);
 
 }
 header nav {
@@ -37,12 +44,12 @@ header nav > div > p {
 header nav > div:last-child > button {
   width: 52px;
   height: 22px;
-  background: #2E86C1;
+  background: var(--secondary-blue);
   border: none;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 700;
-  color: white;
+  color: var(--font-color-whitewhite);
   cursor: pointer;
 }
 main {
@@ -51,22 +58,26 @@ main {
   height: 80vh;
   padding: 50px 0;
 }
-main > section:first-child {
+main > section.main-image {
+  display: none;
+}
+main > section.main-title {
   width: 222px;
   height: auto;
   margin: 0 auto 50px auto;
 }
-main > section:first-child h1 {
+main > section.main-title h1 {
   font-size: 50px;
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
-  color: #2E86C1;
+  color: var(--secondary-blue);
 }
-main > section:nth-child(2) {
+
+main > section.main-form {
   height: auto;
   width: auto;
 }
-main > section:nth-child(2) > form {
+main > section.main-form > form {
   width: 67%;
   max-width: 320px;
   height: 200px;
@@ -75,39 +86,39 @@ main > section:nth-child(2) > form {
   align-items: center;
   margin: 0 auto;
 }
-main > section:nth-child(2) > form > span {
+main > section.main-form > form > span {
   font-size: 1.5rem;
   align-self: flex-start;
-  color: #747E84;
+  color: var(--font-color-label);
   font-weight: 500;
   margin: 0 0 10px 0;
 }
-main > section:nth-child(2) > form > label {
+main > section.main-form > form > label {
   width: 100%;
   margin: 0 0 10px 0;
 }
-main > section:nth-child(2) > form > label > input {
+main > section.main-form > form > label > input {
   width: 100%;
   height: 30px;
-  border: 1px solid #2E86C1;
+  border: 1px solid var(--secondary-blue);
   border-radius: 4px;
   padding: 4px 10px;
   font-size: 11px;
-  color: #686868;
+  color: var(--font-color-input);
 }
-main > section:nth-child(2) > form > label > input:focus-visible {
+input:focus-visible {
   outline: none;
 }
-main > section:nth-child(2) > form > input {
+.form-button:last-child {
   width: 80%;
   height: -webkit-fill-available;
   margin: 20px 0 0;
-  background: #2E86C1;
+  background: var(--secondary-blue);
   border: none;
   border-radius: 8px;
   font-size: 13px;
   font-weight: bold;
-  color: white;
+  color: var(--font-color-white);
   cursor: pointer;
 }
 
@@ -117,8 +128,8 @@ footer {
   min-width: 320px;
   display: flex;
   justify-content: space-around;
-  background: #2E86C1;
-  color: white;
+  background: var(--secondary-blue);
+  color: var(--font-color-white);
   text-align: center;
 }
 footer > section  {

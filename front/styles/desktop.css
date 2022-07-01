@@ -1,0 +1,7 @@
+main > section.main-image {
+    display: block;
+}
+main > section.main-image > figure > img {
+    height: 100px;
+    width: 100px;
+}

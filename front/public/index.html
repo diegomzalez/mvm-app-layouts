@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/desktop.css" media="(min-width: 700px)">
   </head>
   <body>
     <header>
@@ -36,10 +37,15 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="main-image">
+        <figure>
+          <img src="../assets/logo mvm 1.png" alt="">
+        </figure>
+      </section>
+      <section class="main-title">
         <h1>Bienvenidos</h1>
       </section>
-      <section>
+      <section class="main-form">
         <form action="">
           <span>Correo Electrónico</span>
           <label for="email">
@@ -49,7 +55,7 @@
           <label for="password">
             <input id="password" name="password" type="password" required />
           </label>
-          <input type="submit" value="Iniciar Sesión" />
+          <input class="form-button" type="submit" value="Iniciar Sesión" />
         </form>
       </section>
     </main>
