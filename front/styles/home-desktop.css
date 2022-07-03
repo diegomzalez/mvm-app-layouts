@@ -1,0 +1,13 @@
+header button {
+  display: none;
+}
+header nav > div > p {
+  font-size: 2.2rem;
+}
+main { 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
