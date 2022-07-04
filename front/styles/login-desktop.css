@@ -17,9 +17,6 @@ main > section.main-image > figure > img {
   height: 250px;
   width: 200px;
 }
-main > section.main-form > form {
-  width: 100%;
-}
 .form-sign-up {
   display: block;
   height: 16px;

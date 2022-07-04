@@ -4,6 +4,7 @@
   --font-color-white: white;
   --font-color-label: #747e84;
   --font-color-input: #686868;
+  --color-buttom: #1b6bac;
 }
 * {
   box-sizing: border-box;
@@ -27,152 +28,142 @@ body {
 header {
   width: 100%;
   min-width: 320px;
-  height: 10%;
-  max-height: 60px;
+  height: 50px;
   background: var(--primary-blue);
-  color: var(--font-color-white);
 }
-header nav {
+header > nav:only-child {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  overflow: hidden;
 }
-header nav span {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  /*   background: url("../assets/home-logo.png") center/contain no-repeat; */
+header > nav > div:first-child {
+  width: auto;
+  height: auto;
 }
-header nav > div > p {
-  font-size: 1.1rem;
+header > nav > div:first-child > p:only-child {
+  color: var(--font-color-white);
   font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
 }
-header nav > div:last-child > button {
-  width: 52px;
-  height: 22px;
-  background: var(--secondary-blue);
-  border: none;
-  border-radius: 4px;
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--font-color-whitewhite);
-  cursor: pointer;
-  
+header > nav > div:nth-child(2).header-button-container {
+  width: auto;
+  height: auto;
+}
+header > nav > div:nth-child(2).header-button-container > button:only-child {
+  width: 70px;
+  height: 30px;
+  border: solid 2px var(--color-buttom);
+  border-radius: 8px;
+  background: var(--color-buttom);
+  color: var(--font-color-white);
 }
 main {
   width: 100%;
-  height: 80%;
-  min-width: 320px;
-  min-height: 500px;
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
+  height: auto;
 }
-main > section.main-image {
-  display: none;
-}
-
 main > section.main-form {
+  width: auto;
   height: auto;
-  width: 320px;
 }
-main > .main-form > section.main-title {
-  width: 222px;
-  height: auto;
-  margin: 0 auto 35px auto;
-}
-main > .main-form > section.main-title h1 {
+main > section.main-form > section.main-title {
+  margin-bottom: 50px;
   font-size: 50px;
   font-weight: 700;
   font-family: "Dancing Script", cursive;
   color: var(--secondary-blue);
+  text-align: center;
 }
 main > section.main-form > form {
-  width: 70%;
-  max-width: 320px;
-  height: 215px;
+  width: min-content;
+  height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-main > section.main-form > form > span {
+main > section.main-form > form > span.form-input--title {
   font-size: 1.5rem;
-  align-self: flex-start;
-  color: var(--font-color-label);
   font-weight: 500;
-  margin: 0 0 10px 0;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  color: var(--font-color-label);
 }
-main > section.main-form > form > label {
-  width: 100%;
-  margin: 0 0 10px 0;
+main > section.main-form > form > label.input-container {
+  width: auto;
+  height: auto;
 }
-main > section.main-form > form > label > input {
-  width: 100%;
+main > section.main-form > form > label.input-container > input.input {
+  width: 200px;
   height: 30px;
+  margin-bottom: 10px;
   border: 1px solid var(--secondary-blue);
   border-radius: 4px;
   padding: 4px 10px;
-  font-size: 11px;
-  color: var(--font-color-input);
+  font-size: 1.1rem;
 }
-input:focus-visible {
+main > section.main-form > form > label.input-container > input.input:focus-visible {
   outline: none;
 }
-
-main > section.main-form > form > input.button:last-of-type {
-  width: 80%;
+main > section.main-form > form > input:last-of-type.button {
+  width: 200px;
   height: 35px;
   margin: 10px 0 0;
   background: var(--secondary-blue);
   border: none;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--font-color-white);
   cursor: pointer;
 }
-.form-sign-up {
+
+main > section.main-form > form > a.form-sign-up{
+  display: none;
+}
+
+main > section.main-image {
   display: none;
 }
 footer {
-  width: 100%;
-  min-width: 320px;
-  height: 66px;
+  height: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  background: var(--secondary-blue);
-  color: var(--font-color-white);
+  background: var(--primary-blue);
   text-align: center;
+  color: var(--font-color-white);
 }
-footer > section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+footer > .footer-contact-us {
+  width: auto;
+  height: auto;
 }
-footer > section:last-child > ul {
+footer > .footer-social-media {
+  width: auto;
+  height: auto;
+}
+footer > .footer-social-media > ul  {
+  width: auto;
+  height: 80%;
+  margin-top: 1px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   list-style: none;
 }
-footer > section:last-child > ul > li > a {
-  display: inline-block;
-  height: 20px;
+footer > .footer-social-media > ul > li > a {
   width: 20px;
+  height: 20px;
+  display: inline-block;
+
 }
-footer > section:last-child > ul > li > a.facebook {
+footer > .footer-social-media > ul > li > a.facebook {
   background: url("../assets/facebook.svg") center/cover no-repeat;
 }
-footer > section:last-child > ul > li > a.instagram {
+footer > .footer-social-media > ul > li > a.instagram {
   background: url("../assets/instagram.svg") center/cover no-repeat;
 }
-footer > section:last-child > ul > li > a.twitter {
+footer > .footer-social-media > ul > li > a.twitter {
   background: url("../assets/twitter.svg") center/cover no-repeat;
 }
