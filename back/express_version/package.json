@@ -1,0 +1,29 @@
+{
+  "name": "mvm-backend",
+  "version": "1.0.0",
+  "description": "This is the API for the MVM Management ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "api",
+    "express"
+  ],
+  "author": "Diego González <diegom.develops@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
