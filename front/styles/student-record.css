@@ -84,6 +84,7 @@ main section > div.right input {
 }
 
 main div.pd-10 {
+  width: 90%;
   padding: 10px;
 }
 
