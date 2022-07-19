@@ -68,11 +68,12 @@ main section > div.left p,
 main section > div.right p {
   font-size: 1.4rem;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-main section > div.right {
+/* main section > div.right {
   display: flex;
-}
+} */
 
 main section > div.right p {
   align-self: center;
@@ -80,7 +81,8 @@ main section > div.right p {
 }
 
 main section > div.right input {
-  height: 20px;
+  width: 200px;
+  height: 30px;
 }
 
 main div.pd-10 {
