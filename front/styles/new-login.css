@@ -1,93 +1,128 @@
 :root {
-  --primary-blue: #3498db;
+  --primary-blue: #3AB4F2;
   --secondary-blue: #2e86c1;
+  --primary-white: #FEFBF6;
   --font-color-white: white;
   --font-color-label: #747e84;
   --font-color-input: #686868;
-  --color-buttom: #1b6bac;
+  --color-buttom: #FFF9CA;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
-body, html {
+
+body,
+html {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 main {
   width: min-content;
   height: min-content;
   margin: 0 auto;
-  border: solid var(--primary-blue) 1px;
   border-radius: 10px;
+  background: var(--primary-blue);
 }
-main > form.main-form {
+
+main>form.main-form {
   width: 320px;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-main > form.main-form > section.form-top:first-child, main > form.main-form > section-form-bottom:last-child {
+
+main>form.main-form>section.form-top:first-child,
+main>form.main-form>section.form-bottom:last-child {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-main > form.main-form > section.form-top:first-child {
+
+main>form.main-form>section.form-top:first-child {
   height: 60%;
 }
-main > form.main-form > section.form-top:first-child > h1.form-title:only-of-type {
+
+main>form.main-form>section.form-top:first-child>h1.form-title:only-of-type {
   font-size: 3rem;
   font-family: "Dancing Script", cursive;
+  color: var(--font-color-white);
 }
-main > form.main-form > section.form-top:first-child > label.form-input-container {
+
+main>form.main-form>section.form-top:first-child>label.form-input-container {
   width: 70%;
 }
-main > form.main-form > section.form-top:first-child > label.form-input-container > input.input:only-child {
+
+main>form.main-form>section.form-top:first-child>label.form-input-container>input.input:only-child {
   width: 100%;
   height: 100%;
   padding-left: 10px;
+  background: var(--primary-white);
   font-size: 1.5rem;
 }
-main > form.main-form > section.form-top:first-child > label.form-input-container > input.input:only-child:focus-visible {
+
+main>form.main-form>section.form-top:first-child>label.form-input-container>input.input:only-child:focus-visible {
   outline: none;
 }
 
-main > form.main-form > section.form-top:first-child > button.form-button:only-of-type {
+main>form.main-form>section.form-top:first-child>label.form-input-container>input.input:only-child>span.form-input--icon {
+  display: block;
+  background: url("../assets/password-icon.png") center/cover no-repeat;
+}
+
+main>form.main-form>section.form-top:first-child>button.form-button:only-of-type {
   width: 75%;
-  background: none;
-}
-main > form.main-form > section.form-top:first-child > label.form-input-container > input.input:only-child, main > form.main-form > section.form-top:first-child > button.form-button:only-of-type {
-  height: 40px;
-  border: solid 2px var(--secondary-blue);
-  border-radius: 15px;
-}
-main > form.main-form > section.form-top:first-child > p.form-forgot-password:only-of-type {
-  font-size: 1.5em;
+  font-size: 1.3rem;
+  background: var(--color-buttom);
   color: var(--font-color-input);
 }
-main > form.main-form > section.form-top:first-child > p.form-forgot-password:only-of-type > a:only-of-type {
+
+main>form.main-form>section.form-top:first-child>label.form-input-container,
+main>form.main-form>section.form-top:first-child>button.form-button:only-of-type {
+  height: 40px;
+}
+main>form.main-form>section.form-top:first-child>label.form-input-container>input.input:only-child,
+main>form.main-form>section.form-top:first-child>button.form-button:only-of-type {
+  border: none;
+  border-radius: 15px;
+}
+main>form.main-form>section.form-top:first-child>p.form-forgot-password:only-of-type {
+  font-size: 1.0rem;
+  color: var(--font-color-white);
+}
+
+main>form.main-form>section.form-top:first-child>p.form-forgot-password:only-of-type>a:only-of-type {
   text-decoration: none;
 }
-main > form.main-form > section.form-bottom:last-child {
+
+main>form.main-form>section.form-bottom:last-child {
   height: 10%;
   padding-top: 10%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-main > form.main-form > section.form-top:first-child > p.form-forgot-password:only-of-type > a:only-of-type, main > form.main-form > section.form-bottom:last-child > a:only-child {
+
+main>form.main-form>section.form-top:first-child>p.form-forgot-password:only-of-type>a:only-of-type,
+main>form.main-form>section.form-bottom:last-child>a:only-child {
+  color: var(--font-color-white);
+  font-weight: bold;
   text-decoration: none;
 }

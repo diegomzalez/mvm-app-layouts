@@ -102,7 +102,7 @@ main > section.main-form > form > label.input-container > input.input {
   border: 1px solid var(--secondary-blue);
   border-radius: 4px;
   padding: 4px 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 main > section.main-form > form > label.input-container > input.input:focus-visible {
   outline: none;
