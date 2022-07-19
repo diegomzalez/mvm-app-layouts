@@ -43,8 +43,13 @@
           <p class="title">DATOS DEL ALUMNO</p>
         </div>
         <div class="right">
-          <p>Cédula de identidad del Alumno:</p>
-          <input type="number" name="ci" id="ci" />
+          <!--  <p>Cédula Estudiantil:</p> -->
+          <input
+            type="number"
+            name="ci"
+            id="ci"
+            placeholder="Cedula Estudiantil"
+          />
         </div>
       </section>
       <div class="pd-10">
@@ -67,6 +72,16 @@
                 name=""
                 id=""
                 placeholder="Fecha de Nacimiento"
+                required
+              />
+            </label>
+            <label for="ci">
+              <!-- span>Fecha de Nacimiento:</span> -->
+              <input
+                type="number"
+                name="ci"
+                id="ci"
+                placeholder="Cedula de Identidad"
                 required
               />
             </label>
@@ -93,18 +108,21 @@
                 required
               />
             </label>
+            <div class="mother-pather">
+              <label for="">
+                <span>Vive con:</span>
+                <span>Padre</span>
+                <input type="checkbox" name="father" id="father" />
+              </label>
+              <label for="">
+                <span>Madre</span>
+                <input type="checkbox" name="mother" id="mother" />
+              </label>
+            </div>
+
             <label for="">
-              <span>Vice con:</span>
-              <span>Padre</span>
-              <input type="checkbox" name="father" id="father" />
-            </label>
-            <label for="">
-              <span>Madre</span>
-              <input type="checkbox" name="mother" id="mother" />
-            </label>
-            <label for="">
-              <span>Otros:</span>
-              <input type="text" name="other" id="other" />
+              <!-- <span>Otros:</span> -->
+              <input type="text" name="other" id="other" placeholder="otros" />
             </label>
             <label for="">
               <!-- <span>Alergias:</span> -->
