@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img-logo-favicon.png"
+      type="image/x-icon"
+    />
+    <title>Control Estudiantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/student-record.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/home-desktop.css"
+      media="(min-width: 700px)"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="top-navbar">
+        <div>
+          <p>U.E Didaskalio "María Virgen Misionera"</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="main-title">Ficha Acumulativa del Alumno(a)</h1>
+      <section class="main-header">
+        <div class="left">
+          <p>DATOS DEL ALUMNO</p>
+        </div>
+        <div class="right">
+          <p>Cédula de identidad del Alumno:</p>
+          <input type="number" name="ci" id="ci" />
+        </div>
+      </section>
+      <div class="pd-10">
+        <div class="container flex">
+          <div class="data-student">
+            <label for="name-lastname">
+              <!-- <span>Apellidos y Nombres:</span> -->
+              <input
+                type="text"
+                name="name-lastname"
+                id=""
+                placeholder="Apellidos y Nombres"
+                required
+              />
+            </label>
+            <label for="">
+              <!-- span>Fecha de Nacimiento:</span> -->
+              <input
+                type="date"
+                name=""
+                id=""
+                placeholder="Fecha de Nacimiento"
+                required
+              />
+            </label>
+            <label for="">
+              <!-- <span>Municipio:</span> -->
+              <input type="text" name="" id="" placeholder="Municipio" />
+            </label>
+            <label for="name-lastname">
+              <!-- <span>Entidad Federal:</span> -->
+              <input
+                type="text"
+                name="state"
+                id="state"
+                placeholder="Entidad Federal"
+              />
+            </label>
+            <label for="">
+              <!-- <span>Edad:</span> -->
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Edad"
+                required
+              />
+            </label>
+            <label for="">
+              <span>Vice con:</span>
+              <span>Padre</span>
+              <input type="checkbox" name="father" id="father" />
+            </label>
+            <label for="">
+              <span>Madre</span>
+              <input type="checkbox" name="mother" id="mother" />
+            </label>
+            <label for="">
+              <span>Otros:</span>
+              <input type="text" name="other" id="other" />
+            </label>
+            <label for="">
+              <!-- <span>Alergias:</span> -->
+              <input type="text" name="" id="" placeholder="Alergias" />
+            </label>
+          </div>
+          <div class="data-parent"></div>
+          <div class="data-agent"></div>
+          <div class="document-delivered"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-contact-us">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li>0424-492-87-22</li>
+          <li>0412-434-15-42</li>
+        </ul>
+      </section>
+      <section class="footer-social-media">
+        <p>Redes Sociales MVM</p>
+        <ul>
+          <li>
+            <a class="facebook" href=""></a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/ue_mvm/"></a>
+          </li>
+          <li>
+            <a class="twitter" href=""></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
