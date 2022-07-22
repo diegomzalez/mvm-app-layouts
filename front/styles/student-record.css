@@ -64,7 +64,7 @@ main > h1 {
   color: var(--primary-blue);
 }
 
-main section > div.left p {
+.title {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: underline;
@@ -95,17 +95,22 @@ main div.pd-10 {
 
 main div.flex {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-main div .data-student {
+main div .data-student,
+.data-parents,
+.data-agents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin: 15px 0;
 }
 
-main div .data-student label {
+.data-student label,
+.data-parents label,
+.data-agents label {
   margin-bottom: 10px;
 }
 
@@ -115,7 +120,9 @@ main div .data-student label span {
   margin-right: 8px;
 }
 
-main div .data-student input {
+.data-student input,
+.data-parents input,
+.data-agents input {
   width: 220px;
   height: 32px;
   padding: 5px;
@@ -127,6 +134,10 @@ main div .mother-pather input {
   width: 15px;
   height: 15px;
   margin: 0 5px 12px 0;
+}
+
+.data-parents label:nth-child(7) {
+  margin-bottom: 30px;
 }
 
 footer {
