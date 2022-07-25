@@ -13,6 +13,20 @@ main section div.main-header {
   display: flex;
   justify-content: start;
 }
+main section.main-photos {
+  width: 500px;
+  height: 500px;
+}
+main section.main-photos section.photos-container {
+  flex-direction: row;
+}
+main section.main-photos section.photos-container section.photo {
+  justify-content: space-around;
+}
+main section.main-photos section.photos-container section.photo img {
+  width: 150px;
+  height: 150px;
+}
 main section.pd-10 {
   width: 90%;
 }
