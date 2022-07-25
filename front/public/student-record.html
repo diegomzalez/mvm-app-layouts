@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/student-record.css" />
     <link
       rel="stylesheet"
-      href="../styles/home-desktop.css"
+      href="../styles/student-record-desktop.css"
       media="(min-width: 700px)"
     />
   </head>
@@ -38,97 +38,129 @@
     </header>
     <main>
       <h1 class="main-title">Ficha Acumulativa del Alumno(a)</h1>
-      <section class="main-header">
-        <div class="left">
-          <p class="title">DATOS DEL ALUMNO</p>
+      <!-- fotos -->
+      <div class="container-photos">
+        <div class="card">
+          <img id="preview-photo" />
+          <div class="card-footer">
+            <input type="file" name="upload-photo" id="upload-photo" />
+          </div>
         </div>
-        <div class="right">
-          <!--  <p>Cédula Estudiantil:</p> -->
-          <input
-            type="number"
-            name="ci"
-            id="ci"
-            placeholder="Cedula Estudiantil"
-          />
+        <div class="card">
+          <img id="preview-photo" />
+          <div class="card-footer">
+            <input type="file" name="upload-photo" id="upload-photo" />
+          </div>
+        </div>
+      </div>
+      <section class="pd-10">
+        <!--  <p>Cédula Estudiantil:</p> -->
+        <div class="main-header">
+          <label for="">
+            <input
+              type="number"
+              name="ci"
+              id="ci"
+              placeholder="Cedula Estudiantil"
+            />
+          </label>
         </div>
       </section>
       <div class="pd-10">
         <div class="container flex">
-          <div class="data-student">
-            <label for="name-lastname">
-              <!-- <span>Apellidos y Nombres:</span> -->
-              <input
-                type="text"
-                name="name-lastname"
-                id=""
-                placeholder="Apellidos y Nombres"
-                required
-              />
-            </label>
-            <label for="">
-              <!-- span>Fecha de Nacimiento:</span> -->
-              <input
-                type="date"
-                name=""
-                id=""
-                placeholder="Fecha de Nacimiento"
-                required
-              />
-            </label>
-            <label for="ci">
-              <!-- span>Fecha de Nacimiento:</span> -->
-              <input
-                type="number"
-                name="ci"
-                id="ci"
-                placeholder="Cedula de Identidad"
-                required
-              />
-            </label>
-            <label for="">
-              <!-- <span>Municipio:</span> -->
-              <input type="text" name="" id="" placeholder="Municipio" />
-            </label>
-            <label for="name-lastname">
-              <!-- <span>Entidad Federal:</span> -->
-              <input
-                type="text"
-                name="state"
-                id="state"
-                placeholder="Entidad Federal"
-              />
-            </label>
-            <label for="">
-              <!-- <span>Edad:</span> -->
-              <input
-                type="number"
-                name="age"
-                id="age"
-                placeholder="Edad"
-                required
-              />
-            </label>
-            <div class="mother-pather">
-              <label for="">
-                <span>Vive con:</span>
-                <span>Padre</span>
-                <input type="checkbox" name="father" id="father" />
+          <div class="student-data">
+            <p class="title">DATOS DEL ALUMNO</p>
+            <div class="data-student">
+              <label for="name-lastname">
+                <!-- Datos del estudiante -->
+                <!-- <span>Apellidos y Nombres:</span> -->
+                <input
+                  type="text"
+                  name="name-lastname"
+                  id=""
+                  placeholder="Apellidos y Nombres"
+                  required
+                />
               </label>
               <label for="">
-                <span>Madre</span>
-                <input type="checkbox" name="mother" id="mother" />
+                <!-- span>Fecha de Nacimiento:</span> -->
+                <input
+                  type="date"
+                  name=""
+                  id=""
+                  placeholder="Fecha de Nacimiento"
+                  required
+                />
+              </label>
+              <label for="">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Lugar de Nacimiento"
+                  required
+                />
+              </label>
+              <label for="ci">
+                <input
+                  type="number"
+                  name="ci"
+                  id="ci"
+                  placeholder="Cedula de Identidad"
+                  required
+                />
+              </label>
+              <label for="">
+                <!-- <span>Municipio:</span> -->
+                <input type="text" name="" id="" placeholder="Municipio" />
+              </label>
+              <label for="name-lastname">
+                <!-- <span>Entidad Federal:</span> -->
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Entidad Federal"
+                />
+              </label>
+              <label for="">
+                <!-- <span>Edad:</span> -->
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  placeholder="Edad"
+                  required
+                />
+              </label>
+              <div class="mother-pather">
+                <label for="">
+                  <span>Vive con:</span>
+                  <span>Padre</span>
+                  <input type="checkbox" name="father" id="father" />
+                </label>
+                <label for="">
+                  <span>Madre</span>
+                  <input type="checkbox" name="mother" id="mother" />
+                </label>
+              </div>
+
+              <label for="">
+                <!-- <span>Otros:</span> -->
+                <input
+                  type="text"
+                  name="other"
+                  id="other"
+                  placeholder="otros"
+                />
+              </label>
+              <label for="">
+                <!-- <span>Alergias:</span> -->
+                <input type="text" name="" id="" placeholder="Alergias" />
               </label>
             </div>
-
-            <label for="">
-              <!-- <span>Otros:</span> -->
-              <input type="text" name="other" id="other" placeholder="otros" />
-            </label>
-            <label for="">
-              <!-- <span>Alergias:</span> -->
-              <input type="text" name="" id="" placeholder="Alergias" />
-            </label>
           </div>
+
           <div class="data-parent">
             <p class="title">DATOS DE LOS PADRES</p>
             <div class="data-parents">
@@ -139,7 +171,7 @@
                   type="text"
                   name="name-lastname"
                   id=""
-                  placeholder="Nombres y Apellios de la Madre"
+                  placeholder="Nombres y Apellidos de la Madre"
                   required
                 />
               </label>
@@ -172,10 +204,11 @@
               <label for="">
                 <input type="text" name="" id="" placeholder="Oficio" />
               </label>
+
               <!-- Datos del padre -->
               <label for="">
                 <input
-                  type="number"
+                  type="text"
                   name=""
                   id=""
                   placeholder="Nombres y Apellidos del Padre"
@@ -218,7 +251,7 @@
             <div class="data-agents">
               <label for="">
                 <input
-                  type="number"
+                  type="text"
                   name=""
                   id=""
                   placeholder="Nombres y Apellidos del Representante"
@@ -257,6 +290,61 @@
           </div>
           <div class="document-delivered"></div>
         </div>
+      </div>
+      <div class="pd-10">
+        <div class="title">
+          <p>DOCUMENTOS ENTREGADOR PARA INSCRIPCIÓN</p>
+        </div>
+        <section class="document-grid container-document-grid">
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Partida de Nacimiento (Copia)</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Carta de Bautismo (Copia)</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Control de Vacunas</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Fotos del Alumno (4 Fotos Recientes)</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Carpeta de Promoción</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Copia de C.I Alumno (A partir de 5° Grado)</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Copia de C.I del Representante</span>
+          </div>
+          <div class="item">
+            <label for="check">
+              <input type="checkbox" />
+            </label>
+            <span>Fotos del Representante (2 Fotos)</span>
+          </div>
+        </section>
       </div>
     </main>
     <footer>
