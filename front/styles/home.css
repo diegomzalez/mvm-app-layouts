@@ -22,10 +22,7 @@ html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 1028a43 ([ADD] student record  HTML and CSS)
 body,
 html {
   width: 100%;
@@ -33,11 +30,11 @@ html {
   overflow: hidden;
 }
 
-body {
+/* body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 header {
   width: 100%;
@@ -64,7 +61,58 @@ header > nav.top-navbar:only-child > div > h1 {
   font-size: var(--font-size-title-top-navbar);
   font-weight: bold;
   color: var(--font-color-title-top-navbar);
+}
 
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: var(--secondary-blue);
+  left: -200px;
+  transition: 500ms linear;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  /* border: 1px solid var(--font-color-input); */
+}
+
+#sidebar ul li {
+  list-style: none;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.logo {
+  width: 130px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+#sidebar ul li a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -78,7 +126,7 @@ main {
   text-align: center;
 }
 
-main > h2 {
+main > h1 {
   margin: 50px 0;
   font-family: "Dancing Script", cursive;
   font-size: var(--font-size-title-main);
@@ -87,29 +135,14 @@ main > h2 {
 
 main > section.main-data-container {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 main > section.main-data-container > p {
   margin-bottom: 20px;
-  font-size: var(--font-size-text-main);
+  font-size: 2.3rem;
   font-weight: bold;
   color: var(--primary-blue);
-}
-<<<<<<< HEAD
-
-main>section.main-data-container>figure.main-logo {
-=======
-main > section.main-data-container > figure.main-logo {
->>>>>>> 1028a43 ([ADD] student record  HTML and CSS)
-  width: 200px;
-  height: 240px;
-  margin: 0 auto;
-}
-
-main>section.main-data-container>figure.main-logo>img {
-  width: 100%;
-  height: 100%;
 }
 
 footer {
@@ -123,11 +156,12 @@ footer {
   color: var(--font-color);
 }
 
-footer>.footer-contact-us {
+footer > .footer-contact-us {
   width: auto;
   height: auto;
 }
-footer > .footer-contact-us > p, footer > .footer-social-media > p {
+footer > .footer-contact-us > p,
+footer > .footer-social-media > p {
   font-size: var(--font-size-footer-title);
   font-weight: normal;
 }
@@ -136,16 +170,12 @@ footer > .footer-contact-us > ul > li {
   font-weight: normal;
 }
 
-footer>.footer-social-media {
+footer > .footer-social-media {
   width: auto;
   height: auto;
 }
-<<<<<<< HEAD
 
-footer>.footer-social-media > ul {
-=======
 footer > .footer-social-media > ul {
->>>>>>> 1028a43 ([ADD] student record  HTML and CSS)
   width: auto;
   height: 80%;
   margin-top: 1px;
@@ -154,26 +184,20 @@ footer > .footer-social-media > ul {
   list-style: none;
 }
 
-footer>.footer-social-media>ul>li>a {
+footer > .footer-social-media > ul > li > a {
   width: 20px;
   height: 20px;
   display: inline-block;
 }
 
-footer>.footer-social-media>ul>li>a.facebook {
+footer > .footer-social-media > ul > li > a.facebook {
   background: url("../assets/facebook.svg") center/cover no-repeat;
 }
 
-footer>.footer-social-media>ul>li>a.instagram {
+footer > .footer-social-media > ul > li > a.instagram {
   background: url("../assets/instagram.svg") center/cover no-repeat;
 }
-<<<<<<< HEAD
 
-footer>.footer-social-media>ul>li>a.twitter {
-  background: url("../assets/twitter.svg") center/cover no-repeat;
-}
-=======
 footer > .footer-social-media > ul > li > a.twitter {
   background: url("../assets/twitter.svg") center/cover no-repeat;
 }
->>>>>>> 1028a43 ([ADD] student record  HTML and CSS)
