@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/pagos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Registrar Pagos</h1>
+      <div class="record-container">
+        <div class="form-container">
+          <form>
+            <label htmlFor=""> Cedula Estudiantil</label>
+            <input type="text" name="" id="" />
+            <label htmlFor="">Fecha de Pago</label>
+            <input type="datetime-local" name="" id="" />
+            <label htmlFor="">Forma de Pago</label>
+            <input list="browsers" />
+
+            <datalist id="browsers">
+              <option value="VES" />
+              <option value="USD" />
+              <option value="EUR" />
+            </datalist>
+            <label htmlFor=""> Monto a Pagar</label>
+            <input type="text" name="" id="" />
+            <label htmlFor=""> Total a Pagar</label>
+            <span id="">00000.00</span>
+          </form>
+          <div class="button-container">
+            <button id="save">Guardar Pago</button>
+            <button id="cancel">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
